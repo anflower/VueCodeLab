@@ -9,13 +9,20 @@
 <body>
   <div id="app">
     <p>{{msg}}</p>
+    <div>
+      <span>{{info.title}}</span>
+    </div>
+    <input type="text" v-model="msg">
   </div>
   <script src="./src/main.js"></script>
   <script>
     new Vue({
       el: '#app',
       data: {
-        msg: 'This is a msg'
+        msg: 'This is a msg',
+        info: {
+          title: 'Lucky'
+        }
       }
     })
 
